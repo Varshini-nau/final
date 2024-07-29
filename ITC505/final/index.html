@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-board"></div>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+    <script src="script.js"></script>
+
+    <div id="addendum">
+        <h2>Addendum</h2>
+        <p>
+            The project started with planning the structure of the HTML, CSS, and JavaScript files, keeping the HTML simple with a grid for the game board and a footer for the last modified date. The CSS focused on a clean look using white for "on" cells and black for "off" cells. The JavaScript logic was the primary focus, handling game mechanics by toggling cell states and their neighbors when clicked. A win condition was added to alert the player when all cells are "off". The board was randomized by simulating random clicks to ensure solvability. The footer with the last modified date was added per instructions. Challenges included ensuring board solvability, making the design responsive using CSS Grid, and managing event handling efficiently with data attributes. Insights gained include the utility of CSS Grid for responsive layouts, deeper understanding of JavaScript event handling, and creative problem-solving to ensure a solvable board. The user experience was kept simple and intuitive with immediate feedback on clicks and a clear win condition. The final checklist includes verifying URL accessibility, functionality, correct styling, and footer implementation.
+        </p>
+    </div>
+</body>
+</html>
